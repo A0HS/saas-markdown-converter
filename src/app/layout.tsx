@@ -35,6 +35,9 @@ const nanumMyeongjo = Nanum_Myeongjo({
 export const metadata: Metadata = {
   title: "Markdown to Word Converter",
   description: "Convert your Markdown files to Word documents easily",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

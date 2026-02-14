@@ -1,6 +1,6 @@
 "use client";
 
-import { FileText, Download, RotateCcw, Loader2, Minus, Plus } from "lucide-react";
+import { Download, RotateCcw, Loader2, Minus, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Tooltip,
@@ -29,7 +29,15 @@ export function ConverterToolbar({
   return (
     <header className="flex h-12 shrink-0 items-center justify-between border-b px-3">
       <div className="flex items-center gap-2">
-        <FileText className="size-5 text-foreground" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          fill="none"
+          className="size-6 shrink-0"
+        >
+          <rect x="2" y="2" width="28" height="28" rx="6" fill="#2B579A"/>
+          <text x="16" y="24" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="22" fill="white" textAnchor="middle">W</text>
+        </svg>
         <h1 className="text-sm font-semibold tracking-tight">
           <span className="hidden sm:inline">한국GPT협회 Markdown to Word</span>
           <span className="sm:hidden">한국GPT협회 MD → Word</span>
